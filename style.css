@@ -117,18 +117,19 @@ body {
 
 /* 차량 항목 */
 .car-item {
-  background-color: #fff;
-  border-radius: 10px;
   display: flex;
-  align-items: flex-start;
-  padding: 20px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-  max-width: 800px;   /* 추가: 전체 박스 너비 제한 */
-  margin: 0 auto;     /* 가운데 정렬 */
+  align-items: center;
+  background: white;
+  margin-bottom: 20px;
+  padding: 16px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  width: 100%;               /* 너비 꽉 채우기 */
+  max-width: 100%;           /* 혹시 제한 있었다면 제거 */
 }
 
 .car-image img {
-  width: 180px;  /* 기존보다 키움 */
+  width: 200px;  /* 기존보다 키움 */
   height: auto;  /* 세로 비율 자동 조절 */
   object-fit: contain;
   border-radius: 8px;

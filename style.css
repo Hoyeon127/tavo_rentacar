@@ -120,15 +120,17 @@ body {
   background-color: #fff;
   border-radius: 10px;
   display: flex;
-  align-items: center;
-  padding: 16px 20px;
+  align-items: flex-start;
+  padding: 20px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  max-width: 800px;   /* 추가: 전체 박스 너비 제한 */
+  margin: 0 auto;     /* 가운데 정렬 */
 }
 
 .car-image img {
-  width: 120px;
-  height: 80px;
-  object-fit: cover;
+  width: 180px;  /* 기존보다 키움 */
+  height: auto;  /* 세로 비율 자동 조절 */
+  object-fit: contain;
   border-radius: 8px;
   margin-right: 20px;
 }

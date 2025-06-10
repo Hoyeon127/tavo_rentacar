@@ -229,6 +229,8 @@ footer {
 .side-banner {
   width: 160px;
   flex-shrink: 0;
+  position: sticky;
+  top: 100px;  
 }
 
 .side-banner img {
@@ -259,6 +261,25 @@ footer {
   .main-content {
     max-width: 100%;
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .logo {
+    font-size: 1.2em;
+  }
+
+  .menu a {
+    font-size: 0.85em;
+  }
+
+  .car-info p {
+    font-size: 0.85em;
+    line-height: 1.4;
+  }
+
+  .car-info .price {
+    font-size: 0.95em;
   }
 }
 

@@ -284,3 +284,12 @@ footer {
   }
 }
 
+.wide-footer .ad-banner img {
+  width: 100%;
+  height: auto;
+  max-height: 250px; /* 너가 원하는 만큼 키워도 돼 */
+  object-fit: cover;
+  display: block;
+}
+
+

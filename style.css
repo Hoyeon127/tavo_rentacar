@@ -214,3 +214,51 @@ footer {
   }
 }
 
+/* 전체 레이아웃: 왼쪽 고정 배너 + 중앙 콘텐츠 + 오른쪽 랜덤 배너 */
+.layout-with-banner {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 24px;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+/* 좌우 배너 영역 공통 */
+.side-banner {
+  width: 160px;
+  flex-shrink: 0;
+}
+
+.side-banner img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* 중앙 콘텐츠는 기존 컨테이너 유지 */
+.main-content {
+  flex: 1;
+  max-width: 960px;
+}
+
+/* 반응형: 모바일에서는 배너 숨기고 콘텐츠만 보여줌 */
+@media (max-width: 1024px) {
+  .layout-with-banner {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 16px;
+  }
+
+  .side-banner {
+    display: none;
+  }
+
+  .main-content {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
